@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/agarw/OneDrive/Desktop/agivant/backend/agents\")",
+      "Bash(mkdir -p \"C:/Users/agarw/OneDrive/Desktop/agivant/backend/models\")",
+      "Bash(mkdir -p \"C:/Users/agarw/OneDrive/Desktop/agivant/backend/services\")"
+    ]
+  }
+}

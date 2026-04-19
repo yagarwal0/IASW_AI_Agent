@@ -1,0 +1,29 @@
+2026-04-17 03:46:00,495 | INFO     | [cce87956...] [INTAKE] Received legal_name request for customer C001: 'Priya Sharma' → 'Priya Mehta'
+2026-04-17 03:46:00,497 | INFO     | [cce87956...] [VALIDATION] valid=True errors=[]
+2026-04-17 03:46:00,505 | INFO     | [cce87956...] [FILENET_STORE] Stored document 'photo-47kb.jpeg' as FN-20260416-EED4E6EE
+2026-04-17 03:48:01,836 | INFO     | [e7df6c22...] [INTAKE] Received legal_name request for customer C001: 'Priya Sharma' → 'Priya Mehta'
+2026-04-17 03:48:01,837 | INFO     | [e7df6c22...] [VALIDATION] valid=True errors=[]
+2026-04-17 03:48:01,846 | INFO     | [e7df6c22...] [FILENET_STORE] Stored document 'photo-47kb.jpeg' as FN-20260416-6CB1C749
+2026-04-17 03:48:06,113 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 03:48:07,557 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 03:48:07,559 | INFO     | [e7df6c22...] [OCR_EXTRACTION] Extracted 10 fields from document
+2026-04-17 03:48:07,560 | INFO     | [e7df6c22...] [CONFIDENCE] overall=0.0% forgery=FLAG recommendation=REJECT
+2026-04-17 03:48:11,015 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 03:48:11,018 | INFO     | [e7df6c22...] [SUMMARY_GENERATED] The customer has requested a legal name change from "Priya Sharma" to "Priya Mehta." The submitted document was classified as "Other," with no key fields such as bride name, married name, document dat
+2026-04-17 03:48:11,062 | INFO     | [e7df6c22...] [STAGED_PENDING] Status: AI_VERIFIED_PENDING_HUMAN
+2026-04-17 03:48:41,608 | INFO     | [e7df6c22...] [CHECKER_APPROVAL_INITIATED] Checker CHECKER_001 is approving request
+2026-04-17 03:48:41,609 | INFO     | [e7df6c22...] [RPS_WRITE] {"success": true, "rps_transaction_id": "RPS-20260416221841-C001", "customer_id": "C001", "field_updated": "name", "old_value": "Priya Sharma", "new_value": "Priya Mehta", "committed_at": "2026-04-16T
+2026-04-17 03:48:41,627 | INFO     | [e7df6c22...] [HUMAN_DECISION] checker=CHECKER_001 decision=APPROVED
+2026-04-17 15:31:59,027 | INFO     | [645a2ce7...] [INTAKE] Received address request for customer C002: '45 Park Street, New Delhi 110001' → '12 Connaught Place, New Delhi 110001'
+2026-04-17 15:31:59,030 | INFO     | [645a2ce7...] [VALIDATION] valid=True errors=[]
+2026-04-17 15:31:59,040 | INFO     | [645a2ce7...] [FILENET_STORE] Stored document 'sign.jpg' as FN-20260417-96AB1CCF
+2026-04-17 15:32:03,816 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 15:32:05,275 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 15:32:05,283 | INFO     | [645a2ce7...] [OCR_EXTRACTION] Extracted 8 fields from document
+2026-04-17 15:32:05,284 | INFO     | [645a2ce7...] [CONFIDENCE] overall=0.0% forgery=FLAG recommendation=REJECT
+2026-04-17 15:32:10,524 | INFO     | HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-17 15:32:10,532 | INFO     | [645a2ce7...] [SUMMARY_GENERATED] The account change request involves updating the customer's address from "45 Park Street, New Delhi 110001" to "12 Connaught Place, New Delhi 110001." However, the document submitted for this request 
+2026-04-17 15:32:10,573 | INFO     | [645a2ce7...] [STAGED_PENDING] Status: AI_VERIFIED_PENDING_HUMAN
+2026-04-17 15:32:22,453 | INFO     | [645a2ce7...] [CHECKER_APPROVAL_INITIATED] Checker CHECKER_001 is approving request
+2026-04-17 15:32:22,454 | INFO     | [645a2ce7...] [RPS_WRITE] {"success": true, "rps_transaction_id": "RPS-20260417100222-C002", "customer_id": "C002", "field_updated": "address", "old_value": "45 Park Street, New Delhi 110001", "new_value": "12 Connaught Place,
+2026-04-17 15:32:22,471 | INFO     | [645a2ce7...] [HUMAN_DECISION] checker=CHECKER_001 decision=APPROVED
